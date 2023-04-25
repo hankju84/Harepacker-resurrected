@@ -31,17 +31,6 @@ namespace HaRepacker.GUI.Panels.SubPanels
             this.DataContext = this; // set data binding to self.
         }
 
-
-        /// <summary>
-        /// Loaded
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ImageLoadingGif_AnimationLoaded(object sender, RoutedEventArgs e)
-        {
-            imageController = ImageBehavior.GetAnimationController(imageLoadingGif);
-        }
-
         /// <summary>
         /// 
         /// </summary>

@@ -20,26 +20,16 @@
     
     <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
 
-
-        <Image x:Name="imageLoadingGif"
-               MaxWidth="300" Height="300" Grid.Row="0"
-               gif:ImageBehavior.AnimationLoaded="ImageLoadingGif_AnimationLoaded"
-               gif:ImageBehavior.RepeatBehavior="Forever"
-               gif:ImageBehavior.AnimatedSource="../../../Resources/loading.gif"></Image>
-        
-        <TextBlock Text="{x:Static p:Resources.Subpanel_Loading}" FontSize="25" Foreground="Black" 
-                   Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto Mono Medium"/>
+        <TextBlock Text="{x:Static p:Resources.Subpanel_Loading}" FontSize="25" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Roboto Mono Medium"/>
 
         <!-- wzIv-->
         <StackPanel x:Name="stackPanel_wzIvBruteforceStat"
                     Visibility="Collapsed"
             Orientation="Vertical" 
             Grid.Row="0"
-            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="30">
+            HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,30,0">
             <TextBlock Text="Wz IV Key bruteforcer"/>
 
             <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
