@@ -168,12 +168,6 @@
     <EmbeddedResource Include="GUI\FieldLimitPanel.resx">
       <DependentUpon>FieldLimitPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FieldLimitPanel.zh-CHS.resx">
-      <DependentUpon>FieldLimitPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FieldLimitPanel.zh-CHT.resx">
-      <DependentUpon>FieldLimitPanel.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapleLib\MapleLib.csproj">
