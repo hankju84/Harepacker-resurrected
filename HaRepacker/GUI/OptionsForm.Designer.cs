@@ -45,6 +45,7 @@ namespace HaRepacker.GUI
             this.autoAssociateBox = new System.Windows.Forms.CheckBox();
             this.themeColor__comboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.indentBox = new HaRepacker.GUI.Input.IntegerInput();
             this.SuspendLayout();
             // 
             // sortBox
@@ -139,10 +140,17 @@ namespace HaRepacker.GUI
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
+            // indentBox
+            // 
+            resources.ApplyResources(this.indentBox, "indentBox");
+            this.indentBox.Name = "indentBox";
+            this.indentBox.Value = 0;
+            // 
             // OptionsForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.indentBox);
             this.Controls.Add(this.themeColor__comboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.loadRelated);
@@ -170,7 +178,7 @@ namespace HaRepacker.GUI
         private System.Windows.Forms.CheckBox loadRelated;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
-        private IntegerInput indentBox = new IntegerInput();
+        private IntegerInput indentBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox lineBreakBox;
         private System.Windows.Forms.Label label2;
